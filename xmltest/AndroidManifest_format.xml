@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmls:android:"http://schemas.android.com/apk/res/android"
+
+    android:versionCode="2"
+    android:versionName="1.1"
+    package="com.qq.e.demo"
+    platformBuildVersionCode="21"
+    platformBuildVersionName="5.0.1-1624448">
+<uses-permission
+    android:name="android.permission.INTERNET">
+</uses-permission>
+<uses-permission
+    android:name="android.permission.ACCESS_NETWORK_STATE">
+</uses-permission>
+<uses-permission
+    android:name="android.permission.ACCESS_WIFI_STATE">
+</uses-permission>
+<uses-permission
+    android:name="android.permission.READ_PHONE_STATE">
+</uses-permission>
+<uses-permission
+    android:name="android.permission.ACCESS_COARSE_LOCATION">
+</uses-permission>
+<uses-permission
+    android:name="android.permission.ACCESS_COARSE_UPDATES">
+</uses-permission>
+<uses-permission
+    android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+</uses-permission>
+<uses-sdk
+    android:minSdkVersion="8">
+</uses-sdk>
+<application
+    android:theme="@7F070001"
+    android:label="@7F060000"
+    android:icon="@7F020001"
+    android:debuggable="true"
+    android:allowBackup="true">
+<service
+    android:name="com.qq.e.comm.DownloadService"
+    android:exported="false">
+</service>
+<activity
+    android:theme="@android:0103000F"
+    android:name="com.qq.e.ads.AdActivity"
+    android:configChanges="0x000000B0">
+</activity>
+<activity
+    android:name="com.baidu.mobad.feeds.BaiduActivity"
+    android:configChanges="0x000000B0">
+</activity>
+<activity
+    android:label="@7F060009"
+    android:name="com.qq.e.demo.BannerDemoActivity">
+</activity>
+<activity
+    android:label="@7F06000B"
+    android:name="com.qq.e.demo.MainDemoActivity">
+<intent-filter>
+<action
+    android:name="android.intent.action.MAIN">
+</action>
+<category
+    android:name="android.intent.category.LAUNCHER">
+</category>
+</intent-filter>
+</activity>
+<activity
+    android:label="@7F06000F"
+    android:name="com.qq.e.demo.InterstitialAdActivity">
+</activity>
+<activity
+    android:name="com.qq.e.demo.SplashActivity"
+    android:configChanges="0x000004A0">
+</activity>
+<activity
+    android:name="com.qq.e.demo.BannerInListHeaderActivity">
+</activity>
+<activity
+    android:label="@7F060015"
+    android:name="com.qq.e.demo.GridDemoActivity">
+</activity>
+<activity
+    android:label="@7F060016"
+    android:name="com.qq.e.demo.feeds.standard.StandardFeedsDemoActivity">
+</activity>
+<activity
+    android:label="@7F060017"
+    android:name="com.qq.e.demo.feeds.custom.CustomFeedsDemoActivity"
+    android:screenOrientation="1">
+</activity>
+<activity
+    android:name="com.qq.e.demo.GDTNativeAdActivity">
+</activity>
+</application>
+</manifest>
